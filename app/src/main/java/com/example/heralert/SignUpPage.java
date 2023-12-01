@@ -56,8 +56,8 @@ public class SignUpPage extends AppCompatActivity {
             String email = emailField.getText().toString();
             String name = nameField.getText().toString();
             String password = passwordField.getText().toString();
-            ArrayList<String> phone = new ArrayList<>();
-            phone.add(phoneField.getText().toString());
+            String phone = phoneField.getText().toString();
+            ArrayList<EmergencyContact> contacts = new ArrayList<>();
 
             if(!email.contains("@") || !email.endsWith(".com")){
                 Toast.makeText(this, "Email must contain '@' and ends with '.com'", Toast.LENGTH_SHORT).show();
@@ -74,7 +74,7 @@ public class SignUpPage extends AppCompatActivity {
                     }else{
                         Toast.makeText(this, "Register Success, go Back to Login", Toast.LENGTH_SHORT).show();
                         userReference = firebaseDatabase.getReference().child("users").child(mAuth.getCurrentUser().getUid());
-                        userReference.setValue(new User(name,email,password,phone));
+                        userReference.setValue(new User(name,email,password,phone,contacts));
                     }
                 });
             }

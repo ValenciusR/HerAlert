@@ -3,14 +3,15 @@ package com.example.heralert;
 import java.util.ArrayList;
 
 public class User {
-    private String name,email, password;
-    private ArrayList<String> phoneNumbers;
+    private String name,email, password, phoneNumber;
+    private ArrayList<EmergencyContact> contacts;
 
-    public User(String name, String email, String password, ArrayList<String> phoneNumbers) {
+    public User(String name, String email, String password, String phoneNumber, ArrayList<EmergencyContact> contacts) {
         this.name = name;
         this.email = email;
         this.password = password;
-        this.phoneNumbers = phoneNumbers;
+        this.phoneNumber = phoneNumber;
+        this.contacts = contacts;
     }
 
     public String getName() {
@@ -37,11 +38,19 @@ public class User {
         this.password = password;
     }
 
-    public ArrayList<String> getPhoneNumbers() {
-        return phoneNumbers;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhoneNumbers(ArrayList<String> phoneNumbers) {
-        this.phoneNumbers = phoneNumbers;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public ArrayList<EmergencyContact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(ArrayList<EmergencyContact> contacts) {
+        this.contacts = contacts;
     }
 }
