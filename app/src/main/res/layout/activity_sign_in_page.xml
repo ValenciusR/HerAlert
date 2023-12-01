@@ -58,6 +58,7 @@
         </LinearLayout>
 
         <EditText
+            android:id="@+id/et_email_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -85,6 +86,7 @@
             >
 
             <EditText
+                android:id="@+id/et_password_signin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -118,6 +120,7 @@
             android:layout_marginTop="24dp">
 
             <Button
+                android:id="@+id/btn_signin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign In"

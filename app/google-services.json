@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986489461859",
+    "project_id": "heralert",
+    "storage_bucket": "heralert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986489461859:android:fd126d6889c816ebca6c56",
+        "android_client_info": {
+          "package_name": "com.example.heralert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlRvXT4GMdbvcwEhznf9FFGaS0UhIv7uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
