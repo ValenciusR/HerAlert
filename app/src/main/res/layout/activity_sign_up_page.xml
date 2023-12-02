@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:hint="Name"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@drawable/profile_icon"
+            android:drawableLeft="@drawable/baseline_person_24"
             android:drawablePadding="16dp"
             android:background="@drawable/edit_text_border"
             android:paddingHorizontal="16dp"
@@ -43,6 +43,8 @@
             android:layout_marginTop="40dp"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/montserrat_regular"
             />
 
         <EditText
@@ -51,7 +53,7 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@drawable/email_icon"
+            android:drawableLeft="@drawable/baseline_email_24"
             android:drawablePadding="16dp"
             android:background="@drawable/edit_text_border"
             android:paddingHorizontal="16dp"
@@ -59,6 +61,8 @@
             android:layout_marginTop="40dp"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/montserrat_regular"
             />
 
         <EditText
@@ -67,7 +71,7 @@
             android:layout_height="wrap_content"
             android:hint="Whatsapp"
             android:inputType="phone"
-            android:drawableLeft="@drawable/call_icon"
+            android:drawableLeft="@drawable/baseline_phone_24"
             android:drawablePadding="16dp"
             android:background="@drawable/edit_text_border"
             android:paddingHorizontal="16dp"
@@ -75,13 +79,15 @@
             android:layout_marginTop="40dp"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/montserrat_regular"
             />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true"
-            app:startIconDrawable="@drawable/password_icon"
+            app:startIconDrawable="@drawable/baseline_lock_24"
             android:textColorHint="@color/black"
             app:startIconTint="@color/black"
             app:passwordToggleTint="@color/black"
@@ -100,6 +106,8 @@
                 android:paddingVertical="12dp"
                 android:textColorHint="@color/black"
                 android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/montserrat_regular"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
