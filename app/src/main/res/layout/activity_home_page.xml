@@ -30,20 +30,22 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:background="@android:color/transparent"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_menu"
+            app:elevation="0dp"
             app:itemIconTint="#9DB2CE"
-            app:elevation="0dp"/>
+            app:labelVisibilityMode="labeled"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/bottom_menu" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF8F8F"
         android:src="@drawable/float_button_icon"
         app:layout_anchor="@id/bottomAppBar"
         app:maxImageSize="40dp"
-        app:tint="@color/white"/>
+        app:tint="@color/white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
