@@ -27,7 +27,7 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_settings, container, false);
-        
+
         backBtn = v.findViewById(R.id.backBtn);
         profileSelect = v.findViewById(R.id.profileSelect);
         messageSelect = v.findViewById(R.id.messageSelect);
