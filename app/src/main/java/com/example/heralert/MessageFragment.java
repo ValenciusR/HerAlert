@@ -28,7 +28,7 @@ public class MessageFragment extends Fragment {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new HomeFragment());
+                replaceFragment(new SettingsFragment());
             }
         });
 

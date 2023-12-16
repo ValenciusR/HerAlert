@@ -22,7 +22,7 @@ public class ProfileFragment extends Fragment {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new HomeFragment());
+                replaceFragment(new SettingsFragment());
             }
         });
         // Inflate the layout for this fragment
