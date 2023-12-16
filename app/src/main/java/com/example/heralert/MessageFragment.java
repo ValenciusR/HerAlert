@@ -14,15 +14,21 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class MessageFragment extends Fragment {
 
-    AppCompatButton backBtn;
+    AppCompatButton backBtn, updateBtn;
     SwitchCompat autoSendSwitch, sosSoundSwitch;
+    TextInputEditText helpMessageInputText, safeMessageInputText;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_message, container, false);
         backBtn = v.findViewById(R.id.backBtn);
+        updateBtn = v.findViewById(R.id.updateBtn);
+        helpMessageInputText = v.findViewById(R.id.helpMessageInputText);
+        safeMessageInputText = v.findViewById(R.id.helpMessageInputText);
         autoSendSwitch = v.findViewById(R.id.autoSendSwitch);
         sosSoundSwitch = v.findViewById(R.id.sosSoundSwitch);
         backBtn.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +52,12 @@ public class MessageFragment extends Fragment {
             }
         });
 
-        // Inflate the layout for this fragment
+        updateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // isi code update button disini
+            }
+        });
         return v;
     }
 
