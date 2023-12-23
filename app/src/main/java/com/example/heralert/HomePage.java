@@ -25,8 +25,9 @@ public class HomePage extends AppCompatActivity {
         binding.bottomNavigationView.setOnItemSelectedListener(item-> {
 
             switch (item.getItemId()){
-                case R.id.contact:
-                    replaceFragment(new ContactsFragment());
+                case R.id.map:
+                    replaceFragment(new MapFragment());
+//                    replaceFragment(new ContactsFragment());
                     break;
 
                 case R.id.settings:
