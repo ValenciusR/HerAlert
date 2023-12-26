@@ -7,21 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="28dp">
+        android:layout_marginHorizontal="28dp"
+        tools:ignore="MissingConstraints">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/helloUserTxt"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="61dp"
-            android:fontFamily="@font/lato_bold"
-            android:text="Hello, "
-            android:textColor="#676767"
-            android:textSize="32dp" />
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/helloTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="64dp"
+                android:text="Hello, "
+                android:textColor="#676767"
+                android:textSize="32dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/helloUserTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="64dp"
+                android:text=""
+                android:textColor="#676767"
+                android:textSize="32dp" />
+
+        </LinearLayout>
+
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -33,6 +50,6 @@
             android:textSize="20dp" />
 
 <!--        masukin swipe button dari ebanx-->
-    </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

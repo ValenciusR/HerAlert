@@ -70,6 +70,7 @@
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/sosSoundSwitch"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onSosSwitchClick"
