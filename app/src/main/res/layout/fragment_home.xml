@@ -61,7 +61,7 @@
                 android:text="Keep Calm "
                 android:textColor="#FF8F8F"
                 android:textSize="32dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintBottom_toTopOf="@+id/btn_alert"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -77,23 +77,14 @@
                 android:textColor="#676767"
                 android:textSize="20dp"
 
-                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintBottom_toTopOf="@+id/btn_alert"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/helloTxt2"
                 app:layout_constraintVertical_bias="0.1" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="168dp"
-                android:layout_height="163dp"
-                android:background="@drawable/alert_button_wave"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_alert"
                 android:layout_width="168dp"
                 android:layout_height="163dp"
                 android:fontFamily="@font/lato_bold"
@@ -117,7 +108,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/btn_alert"
                 app:layout_constraintVertical_bias="0.256">
 
                 <ImageView
