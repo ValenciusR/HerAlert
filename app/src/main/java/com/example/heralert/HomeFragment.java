@@ -48,7 +48,7 @@ public class HomeFragment extends Fragment {
     FirebaseAuth mAuth;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference usersReference;
-    String message;
+    String message, address,txt;
 
     AppCompatTextView helloUserTxt, helloTxt2;
 
@@ -85,6 +85,7 @@ public class HomeFragment extends Fragment {
             intent.setPackage("com.whatsapp");
 
             // Give your message here
+            message = txt + " " + address;
             intent.putExtra(Intent.EXTRA_TEXT, message);
 
             // Checking whether Whatsapp
@@ -103,10 +104,9 @@ public class HomeFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String username = snapshot.child("name").getValue().toString();
-                String txt = snapshot.child("helpMessage").getValue().toString();
+                txt = snapshot.child("helpMessage").getValue().toString();
                 helloUserTxt.setText(username);
                 helloTxt2.append(username);
-                message = txt + " " +addressTxt.getText().toString();
                 progressDialog.dismiss();
             }
 
@@ -134,6 +134,7 @@ public class HomeFragment extends Fragment {
                                 try {
                                     List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
                                     addressTxt.setText(addresses.get(0).getAddressLine(0));
+                                    address = addresses.get(0).getAddressLine(0);
                                 } catch (IOException e) {
                                     throw new RuntimeException(e);
                                 }
