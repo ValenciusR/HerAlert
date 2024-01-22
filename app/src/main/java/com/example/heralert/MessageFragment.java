@@ -33,6 +33,7 @@ public class MessageFragment extends Fragment {
     AppCompatButton backBtn, updateBtn;
     SwitchCompat sosSoundSwitch;
     TextInputEditText helpMessageInputText, safeMessageInputText;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
