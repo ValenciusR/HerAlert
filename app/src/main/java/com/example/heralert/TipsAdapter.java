@@ -23,7 +23,7 @@ public class TipsAdapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.tips_view, parent, false);
+        View view = layoutInflater.inflate(R.layout.view_tips, parent, false);
         return new ViewHolder(view);
     }
 

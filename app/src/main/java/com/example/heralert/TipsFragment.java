@@ -64,10 +64,15 @@ public class TipsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tips, container, false);
         tipsArrayList.add(new Tips("At Home", "Have Gppd dppr lock, close doors, and winds. Don't open for strangers", R.drawable.home));
-        tipsArrayList.add(new Tips("Shopping", "Tell your family members about where are you going. Keep your valuables with you", R.drawable.home));
-        tipsArrayList.add(new Tips("In the Car", "Always lick your door & windows, Avoid poorly lit parking areas. Hold keys in your hands", R.drawable.home));
-        tipsArrayList.add(new Tips("Online", "Don't share private photos, don't share your location", R.drawable.home));
-        tipsArrayList.add(new Tips("At Home", "Have Gppd dppr lock, close doors, and winds. Don't open for strangers", R.drawable.home));
+        tipsArrayList.add(new Tips("Shopping", "Tell your family members about where are you going. Keep your valuables with you", R.drawable.shopping));
+        tipsArrayList.add(new Tips("In the Car", "Always lick your door & windows, Avoid poorly lit parking areas. Hold keys in your hands", R.drawable.inthecar));
+        tipsArrayList.add(new Tips("Online", "Don't share private photos, don't share your location", R.drawable.online));
+        tipsArrayList.add(new Tips("Traveling Alone", "Inform someone you trust about your travel plans and destination. Stay aware of your surroundings, especially in unfamiliar areas.", R.drawable.travelingalone));
+        tipsArrayList.add(new Tips("Public Transportation", "Before boarding, be aware of emergency exits. Avoid empty train cars or buses late at night. Sit near the driver or conductor for added security.", R.drawable.publictransport));
+        tipsArrayList.add(new Tips("Home Deliveries", "Request deliveries during daylight hours when possible. Avoid inviting delivery personnel inside. Keep communication brief and to the point.", R.drawable.homedelivery));
+        tipsArrayList.add(new Tips("At Hotel", "Choose accommodations in safe neighborhoods. Use door chains or additional locks. Keep valuables secured, and use hotel safes for important items.", R.drawable.athotel));
+        tipsArrayList.add(new Tips("Home Maintenance Services", "Verify the identity of service personnel before allowing them into your home. ", R.drawable.homemaintenanceservices));
+        tipsArrayList.add(new Tips("Workplace Parking", "Park in well-lit areas. Be aware of your surroundings when walking to and from your car. Consider walking with colleagues, especially in the evening.", R.drawable.workplaceparking));
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewTips);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
         recyclerView.setAdapter(new TipsAdapter(view.getContext(), tipsArrayList));

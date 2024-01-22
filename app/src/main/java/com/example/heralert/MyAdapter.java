@@ -24,9 +24,9 @@ public class MyAdapter extends FragmentPagerAdapter {
             case 1:
                 EscapeFragment EscapeFragment = new EscapeFragment();
                 return EscapeFragment;
-//            case 2:
-//                ChatsFragment chatsFragment = new ChatsFragment();
-//                return chatsFragment;
+            case 2:
+                SelfDefenseFragment SelfDefenseFragment = new SelfDefenseFragment();
+                return SelfDefenseFragment;
             default:
                 return null;
         }

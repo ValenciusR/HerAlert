@@ -2,12 +2,12 @@ package com.example.heralert;
 
 public class Tips {
     String nameTips;
-    String emailTips;
+    String descTips;
     int imageTips;
 
     public Tips(String nameTips, String emailTips, int imageTips) {
         this.nameTips = nameTips;
-        this.emailTips = emailTips;
+        this.descTips = emailTips;
         this.imageTips = imageTips;
     }
 
@@ -20,11 +20,11 @@ public class Tips {
     }
 
     public String getEmailTips() {
-        return emailTips;
+        return descTips;
     }
 
     public void setEmailTips(String emailTips) {
-        this.emailTips = emailTips;
+        this.descTips = emailTips;
     }
 
     public int getImageTips() {

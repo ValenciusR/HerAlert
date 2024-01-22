@@ -28,12 +28,12 @@
             android:textSize="15dp" />
 
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
             android:layout_toEndOf="@+id/imageView"
-            android:text="Email"
+            android:text="desc"
             android:textColor="@color/black" />
     </LinearLayout>
 

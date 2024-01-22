@@ -10,33 +10,32 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class EscapeAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class SelfDefenseAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     Context context;
-    ArrayList<Escape> escapeArrayList;
+    ArrayList<SelfDefense> selfDefenses;
 
-    public EscapeAdapter(Context context, ArrayList<Escape> escapeArrayList) {
+    public SelfDefenseAdapter(Context context, ArrayList<SelfDefense> selfDefenses) {
         this.context = context;
-        this.escapeArrayList = escapeArrayList;
+        this.selfDefenses = selfDefenses;
     }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.view_escape, parent, false);
+        View view = layoutInflater.inflate(R.layout.view_self_defense, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Escape escape = escapeArrayList.get(position);
-        holder.nameView.setText(escape.getNameEscape());
-        holder.emailView.setText(escape.getEmailEscape());
-        holder.imageView.setImageResource(escape.getImageEscape());
+        SelfDefense selfDefense = selfDefenses.get(position);
+        holder.nameView.setText(selfDefense.getNameSelfDefense());
+        holder.imageView.setImageResource(selfDefense.getImageSelfDefense());
     }
 
     @Override
     public int getItemCount() {
-        return escapeArrayList.size();
+        return selfDefenses.size();
     }
 }

@@ -29,8 +29,9 @@ public class MapFragment extends Fragment {
 
         TabLayout  tabLayout=(TabLayout) v.findViewById(R.id.tabLayout);
         ViewPager viewPager=(ViewPager) v.findViewById(R.id.viewPager);
-        tabLayout.addTab(tabLayout.newTab().setText("Android"));
-        tabLayout.addTab(tabLayout.newTab().setText("Play"));
+        tabLayout.addTab(tabLayout.newTab().setText("Tips"));
+        tabLayout.addTab(tabLayout.newTab().setText("Escape"));
+        tabLayout.addTab(tabLayout.newTab().setText("Self Defense"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final MyAdapter adapter = new MyAdapter(v.getContext(),getParentFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);

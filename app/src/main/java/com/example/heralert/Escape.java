@@ -2,12 +2,12 @@ package com.example.heralert;
 
 public class Escape {
     String nameEscape;
-    String emailEscape;
+    String descEscape;
     int imageEscape;
 
     public Escape(String nameEscape, String emailEscape, int imageEscape) {
         this.nameEscape = nameEscape;
-        this.emailEscape = emailEscape;
+        this.descEscape = emailEscape;
         this.imageEscape = imageEscape;
     }
 
@@ -20,11 +20,11 @@ public class Escape {
     }
 
     public String getEmailEscape() {
-        return emailEscape;
+        return descEscape;
     }
 
     public void setEmailEscape(String emailEscape) {
-        this.emailEscape = emailEscape;
+        this.descEscape = emailEscape;
     }
 
     public int getImageEscape() {
